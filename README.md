@@ -1,3 +1,3 @@
-# CSCI3310 project
+# BorrowFast - Android mobile application
 
-Group members: Li Hong Man, Cheung Man Dick, Wong Tin Wang David
+Contributors: Li Hong Man, Cheung Man Dick, Wong Tin Wang David
