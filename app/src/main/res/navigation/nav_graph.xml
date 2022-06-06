@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/borrowedBooksFragment"
+        android:name="edu.cuhk.csci3310.borrowfast.BorrowedBooksFragment"
+        android:label="BorrowedBooksFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="edu.cuhk.csci3310.borrowfast.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="edu.cuhk.csci3310.borrowfast.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/bookInfoFragment"
+        android:name="edu.cuhk.csci3310.borrowfast.bookInfoFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_book_info">
+        <argument
+            android:name="docID"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+    <action
+        android:id="@+id/showBookInfo"
+        app:destination="@id/bookInfoFragment" />
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="edu.cuhk.csci3310.borrowfast.SearchResultsFragment"
+        android:label="fragment_search_results">
+        <argument
+            android:name="keyword"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <action android:id="@+id/showSearchResults" app:destination="@id/searchResultsFragment" />
+</navigation>

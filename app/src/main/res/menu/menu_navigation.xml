@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="BorrowedBooks"
+        android:id="@+id/borrowedBooksFragment"
+        android:icon="@drawable/menu_book_48px"/>
+    <item android:title="Home"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_48px"/>
+    <item android:title="Profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/account_circle_48px"/>
+</menu>

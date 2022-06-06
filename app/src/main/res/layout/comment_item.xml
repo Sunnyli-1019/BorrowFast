@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+
+        <TextView
+            android:id="@+id/username_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="-1dp" />
+
+        <TextView
+            android:id="@+id/comment_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Comment"
+            app:layout_constraintBottom_toBottomOf="@id/divider"
+            app:layout_constraintStart_toStartOf="@+id/username_comment"
+            app:layout_constraintTop_toBottomOf="@+id/username_comment" />
+
+        <View
+            android:id="@+id/divider"
+            style="@style/AppTheme.Divider"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+<!--        <ImageButton-->
+<!--            android:id="@+id/upvote"-->
+<!--            android:layout_width="20sp"-->
+<!--            android:layout_height="20sp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:background="@color/fui_transparent"-->
+<!--            android:scaleType="fitXY"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/upvote_count"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/thumb_up_48px" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/downvote"-->
+<!--            android:layout_width="20sp"-->
+<!--            android:layout_height="20sp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="2dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@color/fui_transparent"-->
+<!--            android:scaleType="fitXY"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/divider"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/downvote_count"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/thumb_down_48px" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/upvote_count"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:text="0"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/upvote"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/downvote"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/upvote" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/downvote_count"-->
+<!--            android:layout_width="7dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:text="0"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/downvote"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/downvote"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

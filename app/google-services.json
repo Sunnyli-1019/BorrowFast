@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "645329731141",
+    "project_id": "csci3310-project-cba61",
+    "storage_bucket": "csci3310-project-cba61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645329731141:android:e6040728810b192b16ed2c",
+        "android_client_info": {
+          "package_name": "edu.cuhk.csci3310.borrowfast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645329731141-i597sn7auq798bj8hati3r2nr8bid9it.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPVj3Ta8KxfkuCtZxHTq_Goq1gNk2ePYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645329731141-i597sn7auq798bj8hati3r2nr8bid9it.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

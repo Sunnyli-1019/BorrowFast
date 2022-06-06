@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:id="@+id/card_layout">
+
+    <ImageView
+        android:id="@+id/book_item_image"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:background="#757575"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/book_item_name"
+        style="@style/AppTheme.Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/book_item_image"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@+id/book_item_image"
+        android:ellipsize="end"
+        tools:text="book title" />
+
+    <RelativeLayout
+        android:id="@+id/expanded_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_item_image"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        >
+
+        <!--It has a text view which we will use in our case as
+            a description text for the languages
+            android:visibility="gone"
+            -->
+        <TextView
+            android:id="@+id/book_item_publisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Description Text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/book_item_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_item_publisher"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Year"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/book_renew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_item_year"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Renew"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/book_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_item_year"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@+id/book_renew"
+            android:text="Return"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/book_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/book_item_year"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@+id/book_return"
+            android:text="Info"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/book_item_author"
+        style="@style/AppTheme.Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_item_name"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/book_item_image"
+        android:text="book author" />
+
+    <TextView
+        android:id="@+id/book_item_dueDate"
+        style="@style/AppTheme.Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_item_author"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/book_item_image"
+        android:visibility="invisible"
+        android:text="due Date" />
+
+
+
+    <!--    <me.zhanghai.android.materialratingbar.MaterialRatingBar-->
+    <!--        android:id="@+id/restaurant_item_rating"-->
+    <!--        style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignLeft="@+id/restaurant_item_name"-->
+    <!--        android:layout_below="@+id/restaurant_item_name"-->
+    <!--        android:layout_marginBottom="4dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/restaurant_item_num_ratings"-->
+    <!--        style="@style/AppTheme.Caption"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignBottom="@+id/restaurant_item_rating"-->
+    <!--        android:layout_alignTop="@+id/restaurant_item_rating"-->
+    <!--        android:layout_marginLeft="4dp"-->
+    <!--        android:layout_toRightOf="@+id/restaurant_item_rating"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:textColor="@color/greyDisabled"-->
+    <!--        tools:text="(10)" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/restaurant_item_category"-->
+    <!--        style="@style/AppTheme.Body1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignLeft="@+id/restaurant_item_name"-->
+    <!--        android:layout_below="@+id/restaurant_item_rating"-->
+    <!--        android:textColor="@color/greySecondary"-->
+    <!--        tools:text="Italian" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/restaurant_item_city_divider"-->
+    <!--        style="@style/AppTheme.TextDivider"-->
+    <!--        android:layout_alignTop="@+id/restaurant_item_category"-->
+    <!--        android:layout_toRightOf="@+id/restaurant_item_category"-->
+    <!--        android:text="@string/divider_bullet" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/restaurant_item_city"-->
+    <!--        style="@style/AppTheme.Body1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignTop="@+id/restaurant_item_category"-->
+    <!--        android:layout_toRightOf="@+id/restaurant_item_city_divider"-->
+    <!--        android:textColor="@color/greySecondary"-->
+    <!--        tools:text="Hong Kong" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/restaurant_item_price"-->
+    <!--        style="@style/AppTheme.Caption"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:textColor="@color/greySecondary"-->
+    <!--        tools:text="$$$" />-->
+
+</RelativeLayout>
